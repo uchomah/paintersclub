@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Main Header Styles */
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-header .logo {
+    float: left;
+}
+
+.main-header .nav {
+    float: right;
+}
+
+.main-header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.main-header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-header .nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Clearfix */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Services Section Styles */
+.services {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.services .service {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services .service h3 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    color: #007BFF;
+}
+
+.services .service p {
+    font-size: 16px;
+    color: #555;
+    margin: 0 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .services .service {
+        display: inline-block;
+        width: 30%;
+        margin-right: 3.333%;
+    }
+
+    .services .service:last-child {
+        margin-right: 0;
+    }
+}
